@@ -4,8 +4,11 @@ ConsoleKeyInfo key;
 Console.Title = "What are you building today?";
 Console.ForegroundColor = ConsoleColor.DarkMagenta;
 Console.WriteLine("C# stuff");
+Console.WindowHeight = 40;
+string name = "";
 bool running = true;
-
+name = Console.ReadLine();
+Console.WriteLine(name);
 do{
 
 
