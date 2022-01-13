@@ -13,13 +13,39 @@ key = Console.ReadKey(true);
 
 if (key.Key == ConsoleKey.DownArrow) 
 {
-Console.WriteLine("10 go 20");
-//running = false;
+Console.WriteLine("down");
+
+}
+if (key.Key == ConsoleKey.UpArrow) 
+{
+Console.WriteLine("up");
+
+}
+if (key.Key == ConsoleKey.LeftArrow) 
+{
+Console.WriteLine("left");
+
+}
+if (key.Key == ConsoleKey.RightArrow) 
+{
+Console.WriteLine("right");
+
+}
+
+if (key.Key == ConsoleKey.Q) 
+{
+Console.WriteLine("terminate");
+Console.WriteLine(running);
+running = false;
+Console.WriteLine(running);
 }
 
 
 
-} while(key.Key != ConsoleKey.X);
+ // } while (key.Key != ConsoleKey.X || key.Modifiers != ConsoleModifiers.Alt);
+  } while (key.Key != ConsoleKey.X);
 
-// Console.ReadKey();
 
+
+Console.WriteLine("shutdowndie");
+Console.ReadKey();
